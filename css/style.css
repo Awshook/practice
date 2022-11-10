@@ -40,7 +40,7 @@ a:visited {
 .menu-list {
   display: inline-block;
   width: 320px;
-  color: black;
+  color: var(--secondary-color);
 }
 
 .menu-list li {
@@ -59,7 +59,7 @@ a:visited {
   font-size: 26px;
   line-height: calc(31 / 26);
   letter-spacing: 0.03em;
-  color: black;
+  color: var(--secondary-color);
 }
 
 .logo-link-blue {
@@ -73,7 +73,7 @@ a:visited {
 
 .logo-link:visited,
 .logo-link:active {
-  color: black;
+  color: var(--secondary-color);
 }
 
 .header-contact {
@@ -230,6 +230,7 @@ box-shadow: 0px 1px 1px;
 
 h4 {
   margin-top: 25px;
+  color: var(--secondary-color);
 }
 
 .team {
@@ -240,4 +241,28 @@ h4 {
 
 .team-list {
   margin-top: 50px;
+}
+
+.footer-box {
+  width: 1170px;
+  margin: 0 auto;
+}
+
+.footer {
+  height: 252px;
+  padding-top: 60px;
+  background: #2F303A;
+}
+
+.logo-link-black {
+  color: white;
+}
+
+.footer-address {
+  color: white;
+}
+
+.footer-logo {
+  display: block;
+  margin-bottom: 10px;
 }
