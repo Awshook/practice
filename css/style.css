@@ -225,7 +225,7 @@ h2 {
   display: flex;
   flex-flow: column wrap;
   align-items: center;
-box-shadow: 0px 1px 1px;
+  box-shadow: 0px 1px 1px;
 }
 
 h4 {
@@ -236,7 +236,7 @@ h4 {
 .team {
   padding-top: 94px;
   padding-bottom: 94px;
-  background: #F5F4FA;
+  background: #f5f4fa;
 }
 
 .team-list {
@@ -251,7 +251,7 @@ h4 {
 .footer {
   height: 252px;
   padding-top: 60px;
-  background: #2F303A;
+  background: #2f303a;
 }
 
 .logo-link-black {
@@ -265,4 +265,59 @@ h4 {
 .footer-logo {
   display: block;
   margin-bottom: 10px;
+}
+
+/* -----Portfolio--------------------------------------------- */
+
+.main-area {
+  height: 1500px;
+}
+
+.main-content {
+  width: 1170px;
+  margin: 94px auto 0px;
+  text-align: center;
+}
+
+.main-button {
+  width: fit-content;
+  padding: 6px 20px;
+  margin-right: 5px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: calc(26 / 16);
+  letter-spacing: 0.03em;
+  border-radius: 4px;
+}
+
+.main-button:hover {
+  color: white;
+  background: var(--third-color);
+}
+
+.main-item-list {
+  width: 1170px;
+  margin: 50px auto 0px;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+}
+
+.main-item img {
+  width: 370px;
+}
+
+.main-item p {
+  margin-bottom: 20px;
+}
+
+.main-item p,
+.main-item h4 {
+  text-align:start;
+  padding-left: 30px;
+}
+
+.main-item {
+  box-shadow: 0px 0px 1px;
+  margin-bottom: 30px;
 }
