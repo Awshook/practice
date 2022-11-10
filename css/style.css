@@ -185,6 +185,7 @@ h3 {
 }
 
 .us {
+  padding-bottom: 94px;
   background: #e5e5e5;
 }
 
@@ -204,5 +205,39 @@ h2 {
 .us-image-box {
   display: flex;
   justify-content: space-between;
+  margin-top: 50px;
+}
+
+.team-photo {
+  width: 270px;
+  height: 260px;
+}
+.team-list {
+  width: 1170px;
+  margin: 0 auto;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+}
+
+.team-item {
+  height: 368px;
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+box-shadow: 0px 1px 1px;
+}
+
+h4 {
+  margin-top: 25px;
+}
+
+.team {
+  padding-top: 94px;
+  padding-bottom: 94px;
+  background: #F5F4FA;
+}
+
+.team-list {
   margin-top: 50px;
 }
