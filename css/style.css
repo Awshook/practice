@@ -14,8 +14,7 @@ body {
 }
 
 .header {
-  max-width: 100%;
-  height: 80px;
+  width: 100%;
   padding: 20px;
   box-shadow: 0 0 1px black;
   font-weight: 500;
@@ -25,11 +24,18 @@ body {
 .content-box {
   width: 1170px;
   margin: 0 auto;
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .header-menu {
-  display: inline-block;
   width: 50%;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: center;
 }
 
 a:visited {
@@ -37,21 +43,14 @@ a:visited {
 }
 
 .menu-list {
-  display: inline-block;
-  width: 320px;
+  width: 294px;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
   color: var(--secondary-color);
 }
 
-.menu-list li {
-  display: inline-block;
-}
-
-.menu-list li:not(:last-child) {
-  margin-right: 50px;
-}
-
 .logo-link {
-  margin-right: 93px;
   padding: auto;
   font-family: "Raleway";
   font-weight: 700;
@@ -76,18 +75,16 @@ a:visited {
 }
 
 .header-contact {
-  margin-left: 260px;
-  display: inline-block;
-  width: 317px;
-}
-
-.header-contact li {
-  display: inline-block;
+  width: 50%;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-end;
 }
 
 .contact-email {
   margin-right: 50px;
 }
+
 
 .header-contact a:visited {
   color: inherit;
@@ -104,14 +101,13 @@ a:visited {
 }
 
 .title {
+  padding: 200px 0px;
   width: 100%;
-  height: 600px;
   background: #2f303a;
   text-align: center;
 }
 
 .title-box {
-  height: 600px;
   display: flex;
   flex-flow: column wrap;
   justify-content: center;
@@ -153,6 +149,11 @@ a:visited {
   background: #e5e5e5;
 }
 
+.features-content-box {
+  margin: 0 auto;
+  width: 1170px;
+}
+
 .features-list {
   display: flex;
   flex-flow: row wrap;
@@ -173,10 +174,6 @@ h3 {
   color: var(--secondary-color);
 }
 
-.features-content-box {
-  margin: 0 auto;
-  width: 1170px;
-}
 
 .us-content-box {
   width: 1170px;
