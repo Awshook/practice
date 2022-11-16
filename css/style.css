@@ -5,11 +5,11 @@
 }
 
 body {
-  width: 100%;
+ width: 1600px;
   box-sizing: border-box;
   font-family: Roboto, system-ui, -apple-system, san-serif;
   font-size: 14px;
-  line-height: calc(24 / 14);
+  line-height: 1.17;
   color: var(--primery-color);
 }
 
@@ -22,7 +22,8 @@ body {
 }
 
 .content-box {
-  width: 1170px;
+  width: 1200px;
+  padding: 0px 15px 0px 15px;
   margin: 0 auto;
   display: flex;
   flex-flow: row wrap;
@@ -44,10 +45,16 @@ a:visited {
 
 .menu-list {
   width: 294px;
+  margin-right: 50px;
   display: flex;
   flex-flow: row wrap;
   justify-content: space-between;
   color: var(--secondary-color);
+}
+
+.menu-list a:hover,
+.menu-list a:focus {
+  color: var(--third-color);
 }
 
 .logo-link {
@@ -55,7 +62,7 @@ a:visited {
   font-family: "Raleway";
   font-weight: 700;
   font-size: 26px;
-  line-height: calc(31 / 26);
+  line-height: 1.2;
   letter-spacing: 0.03em;
   color: var(--secondary-color);
 }
@@ -64,7 +71,7 @@ a:visited {
   font-family: "Raleway";
   font-weight: 700;
   font-size: 26px;
-  line-height: calc(31 / 26);
+  line-height: 1.2;
   letter-spacing: 0.03em;
   color: var(--third-color);
 }
@@ -87,6 +94,13 @@ a:visited {
 
 .email-link {
   position: relative;
+  color: inherit;
+  padding-left: 25px;
+}
+
+.email-link:visited,
+.email-link:active {
+  color: var(--primery-color);
 }
 
 .email-link::before {
@@ -97,8 +111,8 @@ a:visited {
   background-image: url(/goit-homework/images/icons/email.svg);
   background-position: center;
   position: absolute;
-  left: -25px;
-  top: 4px;
+  left: 0px;
+  top: 2px;
 }
 
 .phone-number {
@@ -114,16 +128,15 @@ a:visited {
   background-position: center;
   position: absolute;
   left: -15px;
-  top: 2px;
+  top: 1px;
+}
+
+.email-link:hover::before {
+  background: url(/goit-homework/images/icons/email-hover.svg);
 }
 
 .header-contact a:visited {
   color: inherit;
-}
-
-.menu-list a:hover,
-.menu-list a:focus {
-  color: var(--third-color);
 }
 
 .header-contact a:hover,
@@ -146,7 +159,7 @@ a:visited {
 }
 
 .title-box h1 {
-  width: 700px;
+  width: 696px;
   font-weight: 900;
   font-size: 44px;
   line-height: calc(60 / 44);
@@ -182,7 +195,8 @@ a:visited {
 
 .features-content-box {
   margin: 0 auto;
-  width: 1170px;
+  width: 1200px;
+  padding: 0px 15px;
 }
 
 .features-list {
@@ -195,6 +209,10 @@ a:visited {
   width: 250px;
 }
 
+.features-item p {
+  line-height: 1.7;
+}
+
 h3 {
   font-weight: 700;
   font-size: 14px;
@@ -205,12 +223,12 @@ h3 {
   color: var(--secondary-color);
 }
 
-.us-content-box {
+.work-content-box {
   width: 1170px;
   margin: 0 auto;
 }
 
-.us {
+.work {
   padding-bottom: 94px;
   padding-top: 94px;
   background: #e5e5e5;
@@ -225,20 +243,12 @@ h2 {
   color: var(--secondary-color);
 }
 
-.us-item {
-  width: 370px;
-}
-
-.us-image-box {
+.work-item-list {
   display: flex;
   justify-content: space-between;
   margin-top: 50px;
 }
 
-.team-photo {
-  width: 270px;
-  height: 260px;
-}
 .team-list {
   width: 1170px;
   margin: 0 auto;
@@ -286,7 +296,7 @@ h4 {
 }
 
 address p {
-  line-height: calc(24 / 14);
+  line-height: 1.71;
 }
 .footer-address {
   color: white;
@@ -300,10 +310,11 @@ address p {
 /* -----Portfolio--------------------------------------------- */
 
 .main-area {
-  padding: 5% 10%;
+  padding: 94px 0px;
 }
 
-.main-content {
+
+.main-content-box {
   width: 1170px;
   margin: 0px auto 0px;
   text-align: center;
@@ -333,12 +344,14 @@ address p {
   justify-content: space-between;
 }
 
-.main-item img {
-  width: 370px;
-}
-
 .main-item p {
   margin-bottom: 20px;
+  font-size: 16px;
+}
+
+.main-item h4 {
+  line-height: 2;
+  font-size: 18px;
 }
 
 .main-item p,
