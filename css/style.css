@@ -9,7 +9,7 @@ body {
   box-sizing: border-box;
   font-family: Roboto, system-ui, -apple-system, san-serif;
   font-size: 14px;
-  line-height: 1.17;
+  line-height: 1.16;
   letter-spacing: 0.03em;
   color: var(--primery-color);
 }
@@ -59,16 +59,15 @@ a:visited {
 }
 
 .logo-link {
-  padding: auto;
   font-family: "Raleway";
   font-weight: 700;
   font-size: 26px;
   line-height: 1.2;
   letter-spacing: 0.03em;
-  color: var(--secondary-color);
 }
 
-.logo-link-blue {
+.header-menu .logo-link::before {
+  content: "Web";
   font-family: "Raleway";
   font-weight: 700;
   font-size: 26px;
@@ -77,45 +76,15 @@ a:visited {
   color: var(--third-color);
 }
 
-.logo-link:visited,
-.logo-link:active {
+.header-menu .logo-link:visited,
+.header-menu .logo-link:active {
   color: var(--secondary-color);
 }
 
 .header-contact {
   width: 50%;
   display: flex;
-  flex-flow: row wrap;
   justify-content: flex-end;
-}
-
-.contact-email {
-  margin-right: 50px;
-}
-
-.contact-email:hover .email-icon {
-  fill: var(--third-color);
-}
-
-.email-link {
-  position: relative;
-  color: inherit;
-  padding-left: 25px;
-}
-
-.email-link:visited,
-.email-link:active {
-  color: var(--primery-color);
-}
-
-.email-icon {
-  display: inline-block;
-  width: 16px;
-  height: 12px;
-  fill: var(--primery-color);
-  position: relative;
-  top: 2px;
-  left: 20px;
 }
 
 .header-contact a:visited {
@@ -125,6 +94,43 @@ a:visited {
 .header-contact a:hover,
 .header-contact a:focus {
   color: var(--third-color);
+}
+
+
+.contact-email {
+  margin-right: 50px;
+  padding-top: 5px;
+}
+
+.contact-email:hover .email-icon {
+  fill: var(--third-color);
+}
+
+.email-link {
+  position: relative;
+  color: inherit;
+  padding-left: 10px;
+}
+
+.email-link:visited,
+.email-link:active {
+  color: var(--primery-color);
+}
+
+.email-icon {
+  display: inline-block;
+  fill: var(--primery-color);
+  position: relative;
+  top: 2px;
+  right: 9px;
+}
+
+.phone-icon {
+  display: inline-block;
+  fill: var(--primery-color);
+  position: relative;
+  top: 3px;
+  right: 5px;
 }
 
 .title {
@@ -196,6 +202,16 @@ a:visited {
   line-height: 1.7;
 }
 
+.features-item-area {
+  width: 270px;
+  height: 140px;
+  background: #F5F4FA;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
 h3 {
   font-weight: 700;
   font-size: 14px;
@@ -248,6 +264,10 @@ h2 {
   box-shadow: 0px 1px 1px;
 }
 
+.item1-box {
+  width: 206px;
+}
+
 h4 {
   margin-top: 25px;
   color: var(--secondary-color);
@@ -274,20 +294,29 @@ h4 {
   background: #2f303a;
 }
 
-.logo-link-black {
-  color: white;
-}
-
 address p {
   line-height: 1.71;
 }
+
 .footer-address {
   color: white;
 }
 
-.footer-logo {
+a.footer-logo {
   display: block;
   margin-bottom: 20px;
+  color: white;
+}
+
+.footer-logo::before {
+  content: "Web";
+  font-family: "Raleway";
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.2;
+  letter-spacing: 0.03em;
+  color: var(--third-color);
+  position: relative;
 }
 
 /* -----Portfolio--------------------------------------------- */
