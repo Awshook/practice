@@ -13,6 +13,7 @@ body {
   color: var(--primery-color);
 }
 
+
 .header {
   width: 100%;
   padding: 20px;
@@ -56,6 +57,7 @@ a:visited {
 .menu-list a:focus {
   color: var(--third-color);
 }
+
 
 .logo-link {
   padding: auto;
