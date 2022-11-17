@@ -108,11 +108,14 @@ a:visited {
   display: inline-block;
   width: 16px;
   height: 12px;
-  background-image: url(/goit-homework/images/icons/email.svg);
-  background-position: center;
+  background: url(/goit-homework/images/icons/email-icons-both.png) -10px -10px;
   position: absolute;
   left: 0px;
-  top: 2px;
+  top: 3px;
+}
+
+.email-link:hover::before {
+  background: url(/goit-homework/images/icons/email-icons-both.png) -46px -10px;
 }
 
 .phone-number {
@@ -131,10 +134,6 @@ a:visited {
   top: 1px;
 }
 
-.email-link:hover::before {
-  background: url(/goit-homework/images/icons/email-hover.svg);
-}
-
 .header-contact a:visited {
   color: inherit;
 }
@@ -147,7 +146,7 @@ a:visited {
 .title {
   padding: 200px 0px;
   width: 100%;
-  background: #2f303a;
+  background: url(/goit-homework/images/background-title.png);
   text-align: center;
 }
 
@@ -212,6 +211,7 @@ a:visited {
 .features-item p {
   line-height: 1.7;
 }
+
 
 h3 {
   font-weight: 700;
