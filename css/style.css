@@ -142,7 +142,7 @@ a:visited {
 .title {
   padding: 200px 0px;
   width: 100%;
-  background: url(/goit-homework/images/studio/background-title.png);
+  background: url(/goit-homework/images/studio/background-title.png) no-repeat;
   text-align: center;
 }
 
@@ -291,6 +291,15 @@ h2 {
   align-items: center;
 }
 
+.icon-link {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .icon-box:hover {
   background-color: var(--third-color);
 }
@@ -346,6 +355,15 @@ h2 {
   width: 170px;
   height: 92px;
   border: 1px solid var(--primery-color);
+  border-radius: 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.client-item-link {
+  width: 170px;
+  height: 92px;
   border-radius: 4px;
   display: flex;
   justify-content: center;
@@ -438,6 +456,15 @@ a.footer-logo {
   border-radius: 50%;
 }
 
+.social-item-link {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .social-item:hover {
   background-color: var(--third-color);
 }
@@ -508,5 +535,6 @@ a.footer-logo {
 }
 
 .main-item:hover {
-  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
 }
