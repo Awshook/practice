@@ -398,10 +398,12 @@ h2 {
 
 address p {
   line-height: 1.71;
+  color: white;
+  margin-bottom: 9px;
 }
 
 .footer-address {
-  color: white;
+  color: var(--primery-color);
 }
 
 a.footer-logo {
@@ -428,6 +430,7 @@ a.footer-logo {
 .footer-social h3 {
   color: white;
   margin-bottom: 20px;
+  margin-top: 15px;
 }
 
 .social-list {
@@ -510,6 +513,7 @@ a.footer-logo {
 .main-item h4 {
   line-height: 2;
   font-size: 18px;
+  color: var(--secondary-color);
 }
 
 .main-item p,
