@@ -86,10 +86,6 @@ a:visited {
   justify-content: flex-end;
 }
 
-.header-contact a:visited {
-  color: inherit;
-}
-
 .header-contact a:hover,
 .header-contact a:focus {
   color: var(--third-color);
@@ -102,7 +98,8 @@ a:visited {
   align-items: flex-end;
 }
 
-.contact-email:hover .email-icon {
+.email-link:hover .email-icon,
+.phone-link:hover .phone-icon {
   fill: var(--third-color);
 }
 
@@ -123,6 +120,14 @@ a:visited {
   right: 9px;
 }
 
+.phone-link {
+  padding-left: 10px;
+}
+
+.phone-link:hover {
+  cursor: pointer;
+}
+
 .phone-icon {
   display: inline-block;
   fill: var(--primery-color);
@@ -134,7 +139,8 @@ a:visited {
 .title {
   padding: 200px 0px;
   width: 100%;
-  background: url(/goit-homework/images/studio/background-title.png) no-repeat;
+  background: no-repeat;
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),url(/goit-homework/images/studio/background-title.png);
 }
 
 .title-box {
@@ -175,7 +181,7 @@ a:visited {
 
 .features {
   padding: 94px 94px;
-  background: #e5e5e5;
+  background: white;
 }
 
 .features-content-box {
@@ -201,7 +207,7 @@ a:visited {
 .features-icon-area {
   width: 270px;
   height: 140px;
-  background: #f5f4fa;
+  background: #e5e5e5;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -221,7 +227,7 @@ h3 {
 .work {
   padding-bottom: 94px;
   padding-top: 94px;
-  background: #e5e5e5;
+  background: white;
 }
 
 .work-content-box {
@@ -247,7 +253,7 @@ h2 {
 .team {
   padding-top: 94px;
   padding-bottom: 94px;
-  background: #f5f4fa;
+  background: #F5F4FA;
 }
 
 .team-list {
