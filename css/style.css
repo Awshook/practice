@@ -39,7 +39,8 @@ body {
   align-items: center;
 }
 
-a:visited {
+a:visited,
+a {
   color: inherit;
 }
 
