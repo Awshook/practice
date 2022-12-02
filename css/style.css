@@ -53,6 +53,81 @@ a {
   color: var(--secondary-color);
 }
 
+.menu-item-link {
+  padding: 28px 0px;
+  position: relative;
+  transition: color 250ms;
+}
+
+.item1-link::after {
+  content: "";
+  display: block;
+  width: 0;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  height: 4px;
+  border-radius: 2px;
+  background-color: var(--third-color);
+  transition: width 500ms;
+}
+
+.item1-link:hover::after {
+  content: "";
+  display: block;
+  width: 48px;
+  border-radius: 2px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.item2-link::after {
+  content: "";
+  display: block;
+  width: 0;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  height: 4px;
+  border-radius: 2px;
+  background-color: var(--third-color);
+  transition: width 500ms;
+}
+
+.item2-link:hover::after {
+  content: "";
+  display: block;
+  width: 76px;
+  border-radius: 2px;
+  position: absolute;
+  bottom: 0;
+  left: 1px;
+}
+
+.item3-link::after {
+  content: "";
+  display: block;
+  width: 0;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  height: 4px;
+  border-radius: 2px;
+  background-color: var(--third-color);
+  transition: width 500ms;
+}
+
+.item3-link:hover::after {
+  content: "";
+  display: block;
+  width: 67.5px;
+  border-radius: 2px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
 .menu-list a:hover,
 .menu-list a:focus {
   color: var(--third-color);
@@ -64,6 +139,7 @@ a {
   font-size: 26px;
   line-height: 1.2;
   letter-spacing: 0.03em;
+  color: black;
 }
 
 .header-menu .logo-link::before {
