@@ -213,7 +213,7 @@ a {
     url(/goit-homework/images/studio/background-title.png);
 }
 
-.title__box {
+.title__content-box {
   display: flex;
   flex-flow: column;
   justify-content: center;
@@ -255,7 +255,11 @@ a {
   background: white;
 }
 
-.features__content-box {
+.features__content-box,
+.main__content-box,
+.work__content-box,
+.team__content-box,
+.clients__content-box {
   margin: 0 auto;
   width: 1200px;
   padding: 0px 15px;
@@ -301,12 +305,6 @@ a {
   background: white;
 }
 
-.work__content-box {
-  width: 1200px;
-  margin: 0 auto;
-  padding: 0 15px;
-}
-
 h2 {
   font-weight: 700;
   font-size: 36px;
@@ -346,12 +344,6 @@ h2 {
   padding-top: 94px;
   padding-bottom: 94px;
   background: #f5f4fa;
-}
-
-.team__content-box {
-  width: 1200px;
-  margin: 0 auto;
-  padding: 0 15px;
 }
 
 .team__header {
@@ -430,12 +422,6 @@ h2 {
 
 .clients {
   padding: 94px 0px;
-}
-
-.clients__content-box {
-  margin: 0 auto;
-  width: 1200px;
-  padding: 0px 15px;
 }
 
 .clients__list {
@@ -582,12 +568,6 @@ h2 {
 
 .main__content {
   padding: 94px 0px;
-}
-
-.main__content-box {
-  width: 1170px;
-  margin: 0px auto 0px;
-  text-align: center;
 }
 
 .main__btn-list {
