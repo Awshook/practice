@@ -19,39 +19,43 @@
   </head>
   <body>
     <header class="header">
-      <div class="content-box">
+      <div class="header__content-box">
         <nav class="header-menu">
-          <a
-            class="logo-link"
-            href="http://127.0.0.1:5500/goit-homework/index.html"
-            >Studio</a
-          >
+          <div class="header__logo logo">
+            <a
+              class="header__logo-link logo-link"
+              href="http://127.0.0.1:5500/goit-homework/index.html"
+              ><span class="header__logo-link-blue">Web</span>Studio</a
+            >
+          </div>
 
-          <ul class="menu-list">
-            <li class="menu-item item1">
+          <ul class="header__menu-list">
+            <li class="header__menu-item">
               <a
-                class="menu-item-link item1-link"
+                class="header__menu-link header__menu-link-1"
                 href="http://127.0.0.1:5500/goit-homework/index.html"
                 >Студия</a
               >
             </li>
-            <li class="menu-item item2">
+            <li class="header__menu-item">
               <a
-                class="menu-item-link item2-link"
+                class="header__menu-link header__menu-link-2"
                 href="http://127.0.0.1:5500/goit-homework/portfolio.html"
                 >Портфолио</a
               >
             </li>
-            <li class="menu-item item3">
-              <a class="menu-item-link item3-link" href="">Контакты</a>
+            <li class="header__menu-item">
+              <a class="header__menu-link header__menu-link-3" href="#"
+                >Контакты</a
+              >
             </li>
           </ul>
         </nav>
 
-        <ul class="header-contact contact">
-          <li class="contact-email">
-            <a href="info@devstudio.com" class="email-link"
-              ><svg class="email-icon" width="16" height="12">
+        <ul class="header__contact">
+          <li class="header__email">
+            <a href="info@devstudio.com" class="header__email-link"
+              ><svg class="header__email-icon" width="16" height="12">
                 <use
                   xlink:href="/goit-homework/images/icons.svg#icon-email"
                 ></use></svg
@@ -59,9 +63,9 @@
             >
           </li>
 
-          <li class="contact-phone">
-            <a href="#" class="phone-link">
-              <svg class="phone-icon" width="10" height="16">
+          <li class="header__phone">
+            <a href="#" class="header__phone-link">
+              <svg class="header__phone-icon" width="10" height="16">
                 <use xlink:href="/goit-homework/images/icons.svg#phone"></use>
               </svg>
               +38 096 111 11 11</a
@@ -70,266 +74,288 @@
         </ul>
       </div>
     </header>
-    <main class="main-area">
-      <section class="main-content">
-        <div class="main-content-box">
-          <div class="main-button-list">
-            <button class="main-button" type="menu">Все</button>
-            <button class="main-button" type="menu">Веб-сайты</button>
-            <button class="main-button" type="menu">Приложения</button>
-            <button class="main-button" type="menu">Дизайн</button>
-            <button class="main-button" type="menu">Маркетинг</button>
-          </div>
 
-          <div class="main-item-list">
-            <a href="#" class="main-link">
-              <div class="main-item">
+    <main class="main__area">
+      <section class="main__content">
+        <div class="main__content-box">
+          <ul class="main__btn-list">
+            <li class="main__btn-item">
+              <button class="main__btn" type="menu">Все</button>
+            </li>
+            <li class="main__btn-item">
+              <button class="main__btn" type="menu">Веб-сайты</button>
+            </li>
+            <li class="main__btn-item">
+              <button class="main__btn" type="menu">Приложения</button>
+            </li>
+            <li class="main__btn-item">
+              <button class="main__btn" type="menu">Дизайн</button>
+            </li>
+            <li class="main__btn-item">
+              <button class="main__btn" type="menu">Маркетинг</button>
+            </li>
+          </ul>
+
+          <div class="main__item-list">
+            <a href="#" class="main__link-item">
+              <div class="main__link-content">
                 <img
+                class="main__link-item-img"
                   src="/goit-homework/images/portfolio/item1.jpg"
                   alt="Технокряк"
                   width="370"
                   height="294"
                 />
-                <div class="main-description">
-                  <p class="main-text">
+                <div class="main__description">
+                  <p class="main__description-text">
                     Ресурс предлагает комплексные предложения с разным уровнем
                     функционала и сервисов. Все это позволит посетителю получить
                     исчерпывающие сведения о компании или частном лице.
                   </p>
                 </div>
               </div>
-              <div class="main-footer">
-                <h4 class="main-title">Технокряк</h4>
-                <p class="main-subtitle">Веб-сайт</p>
+              <div class="main__footer">
+                <h4 class="main__item-title">Технокряк</h4>
+                <p class="main__item-subtitle">Веб-сайт</p>
               </div>
             </a>
 
-            <a href="#" class="main-link">
-              <div class="main-item">
+            <a href="#" class="main__link-item">
+              <div class="main__link-content">
                 <img
                   src="/goit-homework/images/portfolio/item2.jpg"
                   alt="Постер New Orlean vs Golden Star"
                   width="370"
                   height="294"
                 />
-                <div class="main-description">
-                  <p class="main-text">
+                <div class="main__description">
+                  <p class="main__description-text">
                     Ресурс предлагает комплексные предложения с разным уровнем
                     функционала и сервисов. Все это позволит посетителю получить
                     исчерпывающие сведения о компании или частном лице.
                   </p>
                 </div>
               </div>
-              <div class="main-footer">
-                <h4 class="main-title">Постер New Orlean vs Golden Star</h4>
-                <p class="main-subtitle">Дизайн</p>
+              <div class="main__footer">
+                <h4 class="main__item-title">Постер New Orlean vs Golden Star</h4>
+                <p class="main__item-subtitle">Дизайн</p>
               </div>
             </a>
 
-            <a href="#" class="main-link">
-              <div class="main-item">
+            <a href="#" class="main__link-item">
+              <div class="main__link-content">
                 <img
+                class="main__link-item-img"
                   src="/goit-homework/images/portfolio/item3.jpg"
                   alt="Ресторан Seafood"
                   width="370"
                   height="294"
                 />
-                <div class="main-description">
-                  <p class="main-text">
+                <div class="main__description">
+                  <p class="main__description-text">
                     Ресурс предлагает комплексные предложения с разным уровнем
                     функционала и сервисов. Все это позволит посетителю получить
                     исчерпывающие сведения о компании или частном лице.
                   </p>
                 </div>
               </div>
-              <div class="main-footer">
-                <h4 class="main-title">Ресторан Seafood</h4>
-                <p class="main-subtitle">Приложение</p>
+              <div class="main__footer">
+                <h4 class="main__item-title">Ресторан Seafood</h4>
+                <p class="main__item-subtitle">Приложение</p>
               </div>
             </a>
 
-            <a href="#" class="main-link">
-              <div class="main-item">
+            <a href="#" class="main__link-item">
+              <div class="main__link-content">
                 <img
+                class="main__link-item-img"
                   src="/goit-homework/images/portfolio/item4.jpg"
                   alt="Проект Prime"
                   width="370"
                   height="294"
                 />
-                <div class="main-description">
-                  <p class="main-text">
+                <div class="main__description">
+                  <p class="main__description-text">
                     Ресурс предлагает комплексные предложения с разным уровнем
                     функционала и сервисов. Все это позволит посетителю получить
                     исчерпывающие сведения о компании или частном лице.
                   </p>
                 </div>
               </div>
-              <div class="main-footer">
-                <h4 class="main-title">Проект Prime</h4>
-                <p class="main-subtitle">Маркетинг</p>
+              <div class="main__footer">
+                <h4 class="main__item-title">Проект Prime</h4>
+                <p class="main__item-subtitle">Маркетинг</p>
               </div>
             </a>
 
-            <a href="#" class="main-link">
-              <div class="main-item">
+            <a href="#" class="main__link-item">
+              <div class="main__link-content">
                 <img
+                class="main__link-item-img"
                   src="/goit-homework/images/portfolio/item5.jpg"
                   alt="Проект Boxes"
                   width="370"
                   height="294"
                 />
-                <div class="main-description">
-                  <p class="main-text">
+                <div class="main__description">
+                  <p class="main__description-text">
                     Ресурс предлагает комплексные предложения с разным уровнем
                     функционала и сервисов. Все это позволит посетителю получить
                     исчерпывающие сведения о компании или частном лице.
                   </p>
                 </div>
               </div>
-              <div class="main-footer">
-                <h4 class="main-title">Проект Boxes</h4>
-                <p class="main-subtitle">Приложение</p>
+              <div class="main__footer">
+                <h4 class="main__item-title">Проект Boxes</h4>
+                <p class="main__item-subtitle">Приложение</p>
               </div>
             </a>
 
-            <a href="#" class="main-link">
-              <div class="main-item">
+            <a href="#" class="main__link-item">
+              <div class="main__link-content">
                 <img
+                class="main__link-item-img"
                   src="/goit-homework/images/portfolio/item6.jpg"
                   alt="Inspiration has no Borders - Веб-сайт"
                   width="370"
                   height="294"
                 />
-                <div class="main-description">
-                  <p class="main-text">
+                <div class="main__description">
+                  <p class="main__description-text">
                     Ресурс предлагает комплексные предложения с разным уровнем
                     функционала и сервисов. Все это позволит посетителю получить
                     исчерпывающие сведения о компании или частном лице.
                   </p>
                 </div>
               </div>
-              <div class="main-footer">
-                <h4 class="main-title">Inspiration has no Borders</h4>
-                <p class="main-subtitle">Веб-сайт</p>
+              <div class="main__footer">
+                <h4 class="main__item-title">Inspiration has no Borders</h4>
+                <p class="main__item-subtitle">Веб-сайт</p>
               </div>
             </a>
 
-            <a href="#" class="main-link">
-              <div class="main-item">
+            <a href="#" class="main__link-item">
+              <div class="main__link-content">
                 <img
+                class="main__link-item-img"
                   src="/goit-homework/images/portfolio/item7.jpg"
                   alt="Издание Limited Edition"
                   width="370"
                   height="294"
                 />
-                <div class="main-description">
-                  <p class="main-text">
+                <div class="main__description">
+                  <p class="main__description-text">
                     Ресурс предлагает комплексные предложения с разным уровнем
                     функционала и сервисов. Все это позволит посетителю получить
                     исчерпывающие сведения о компании или частном лице.
                   </p>
                 </div>
               </div>
-              <div class="main-footer">
-                <h4 class="main-title">Издание Limited Edition</h4>
-                <p class="main-subtitle">Дизайн</p>
+              <div class="main__footer">
+                <h4 class="main__item-title">Издание Limited Edition</h4>
+                <p class="main__item-subtitle">Дизайн</p>
               </div>
             </a>
 
-            <a href="#" class="main-link">
-              <div class="main-item">
+            <a href="#" class="main__link-item">
+              <div class="main__link-content">
                 <img
+                class="main__link-item-img"
                   src="/goit-homework/images/portfolio/item8.jpg"
                   alt="Проект LAB - Маркетинг"
                   width="370"
                   height="294"
                 />
-                <div class="main-description">
-                  <p class="main-text">
+                <div class="main__description">
+                  <p class="main__description-text">
                     Ресурс предлагает комплексные предложения с разным уровнем
                     функционала и сервисов. Все это позволит посетителю получить
                     исчерпывающие сведения о компании или частном лице.
                   </p>
                 </div>
               </div>
-              <div class="main-footer">
-                <h4 class="main-title">Проект LAB</h4>
-                <p class="main-subtitle">Маркетинг</p>
+              <div class="main__footer">
+                <h4 class="main__item-title">Проект LAB</h4>
+                <p class="main__item-subtitle">Маркетинг</p>
               </div>
             </a>
 
-            <a href="#" class="main-link">
-              <div class="main-item">
+            <a href="#" class="main__link-item">
+              <div class="main__link-content">
                 <img
+                class="main__link-item-img"
                   src="/goit-homework/images/portfolio/item9.jpg"
                   alt="Growing Business - Приложение"
                   width="370"
                   height="294"
                 />
-                <div class="main-description">
-                  <p class="main-text">
+                <div class="main__description">
+                  <p class="main__description-text">
                     Ресурс предлагает комплексные предложения с разным уровнем
                     функционала и сервисов. Все это позволит посетителю получить
                     исчерпывающие сведения о компании или частном лице.
                   </p>
                 </div>
               </div>
-              <div class="main-footer">
-                <h4 class="main-title">Growing Business</h4>
-                <p class="main-subtitle">Приложение</p>
+              <div class="main__footer">
+                <h4 class="main__item-title">Growing Business</h4>
+                <p class="main__item-subtitle">Приложение</p>
               </div>
             </a>
           </div>
         </div>
       </section>
     </main>
+
     <footer class="footer">
-      <section class="footer-box">
-        <div class="footer-info">
-          <a
-            class="logo-link footer-logo"
-            href="http://127.0.0.1:5500/goit-homework/index.html"
-            >Studio</a
-          >
+      <section class="footer__content-box">
+        <div class="footer__info">
+          <div class="footer__logo logo">
+            <a
+              class="footer__logo-link logo-link"
+              href="http://127.0.0.1:5500/goit-homework/index.html"
+              ><span class="footer__logo-link-blue">Web</span>Studio</a
+            >
+          </div>
           <address class="footer__address">
             <p class="footer__city">г. Киев, пр-т Леси Украинки, 26</p>
             <p class="footer__email">info@example.com</p>
             <p class="footer__phone">+38 099 111 11 11</p>
           </address>
         </div>
-        <div class="footer-social social">
-          <h3>Присоединяйтесь</h3>
-          <ul class="social-list">
-            <li class="social-item">
-              <a href="#" class="social-item-link">
-                <svg class="instagram" width="20" height="20">
+        <div class="footer__social social">
+          <h3 class="footer__social-header">Присоединяйтесь</h3>
+          <ul class="footer__social-list">
+            <li class="footer__social-item">
+              <a href="#" class="social__item-link">
+                <svg class="footer__icon-instagram" width="20" height="20">
                   <use
                     xlink:href="/goit-homework/images/icons.svg#instagram"
                   ></use>
                 </svg>
               </a>
             </li>
-            <li class="social-item">
-              <a href="#" class="social-item-link">
-                <svg class="twitter" width="20" height="20">
+            <li class="footer__social-item">
+              <a href="#" class="social__item-link">
+                <svg class="footer__icon-twitter" width="20" height="20">
                   <use
                     xlink:href="/goit-homework/images/icons.svg#twitter"
                   ></use>
                 </svg>
               </a>
             </li>
-            <li class="social-item">
-              <a href="#" class="social-item-link">
-                <svg class="facebook" width="20" height="20">
+            <li class="footer__social-item">
+              <a href="#" class="social__item-link">
+                <svg class="footer__icon-facebook" width="20" height="20">
                   <use
                     xlink:href="/goit-homework/images/icons.svg#facebook"
                   ></use>
                 </svg>
               </a>
             </li>
-            <li class="social-item">
-              <a href="#" class="social-item-link">
-                <svg class="in" width="20" height="20">
+            <li class="footer__social-item">
+              <a href="#" class="social__item-link">
+                <svg class="footer__icon-in" width="20" height="20">
                   <use xlink:href="/goit-homework/images/icons.svg#in"></use>
                 </svg>
               </a>
