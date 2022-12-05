@@ -76,9 +76,19 @@
     <section class="title">
       <div class="title__content-box flex-content-box">
         <h1 class="title__header">Эффективные решения для вашего бизнеса</h1>
-        <button type="button" class="title__button">Заказать услугу</button>
+        <button type="button" class="title__button" data-modal-open>
+          Заказать услугу
+        </button>
       </div>
     </section>
+
+    <div class="modal" data-modal>
+      <div class="modal-window">
+        <button class="close-button" data-modal-close>X</button>
+      </div>
+
+      <div class="overlay"></div>
+    </div>
 
     <section class="features">
       <div class="features__content-box">
@@ -154,7 +164,7 @@
               class="work__img"
               width="370"
             />
-            <div class="work__header">Десктопные приложения</div>
+            <div class="work__item-header">Десктопные приложения</div>
           </li>
           <li class="work__item">
             <img
@@ -163,7 +173,7 @@
               class="work__img"
               width="370"
             />
-            <div class="work__header">Мобильные приложения</div>
+            <div class="work__item-header">Мобильные приложения</div>
           </li>
           <li class="work__item">
             <img
@@ -172,7 +182,7 @@
               class="work__img"
               width="370"
             />
-            <div class="work__header">Дизайнерские решения</div>
+            <div class="work__item-header">Дизайнерские решения</div>
           </li>
         </ul>
       </div>
@@ -181,192 +191,192 @@
     <section class="team">
       <div class="team__content-box">
         <h2 class="team__header">Наша команда</h2>
-      <ul class="team__list">
-        <li class="team__item">
-          <img
-            class="team__photo"
-            src="/goit-homework/images/studio/Игорь.jpg"
-            alt="Игорь"
-            width="270"
-            height="260"
-          />
-          <h4 class="team__name">Игорь Демьяненко</h4>
-          <p class="team__spec">Product Designer</p>
-          <ul class="team__icon-list">
-            <li class="team__icon-box">
-              <a href="#" class="team__icon-link"
-                ><svg class="team__icon-instagram" width="20" height="20">
-                  <use
-                    xlink:href="/goit-homework/images/icons.svg#instagram"
-                  ></use></svg
-              ></a>
-            </li>
-            <li class="team__icon-box">
-              <a href="#" class="team__icon-link">
-                <svg class="team__icon-twitter" width="20" height="20">
-                  <use
-                    xlink:href="/goit-homework/images/icons.svg#twitter"
-                  ></use>
-                </svg>
-              </a>
-            </li>
-            <li class="team__icon-box">
-              <a href="#" class="team__icon-link">
-                <svg class="team__icon-facebook" width="20" height="20">
-                  <use
-                    xlink:href="/goit-homework/images/icons.svg#facebook"
-                  ></use>
-                </svg>
-              </a>
-            </li>
-            <li class="team__icon-box">
-              <a href="#" class="team__icon-link">
-                <svg class="team__icon-in" width="20" height="20">
-                  <use xlink:href="/goit-homework/images/icons.svg#in"></use>
-                </svg>
-              </a>
-            </li>
-          </ul>
-        </li>
-        <li class="team__item">
-          <img
-            class="team__photo"
-            src="/goit-homework/images/studio/Ольга.jpg"
-            alt="Ольга"
-            width="270"
-            height="260"
-          />
-          <h4 class="team__name">Ольга Репина</h4>
-          <p class="team__spec">Frontend Developer</p>
-          <ul class="team__icon-list">
-            <li class="team__icon-box">
-              <a href="#" class="team__icon-link"
-                ><svg class="team__icon-instagram" width="20" height="20">
-                  <use
-                    xlink:href="/goit-homework/images/icons.svg#instagram"
-                  ></use></svg
-              ></a>
-            </li>
-            <li class="team__icon-box">
-              <a href="#" class="team__icon-link">
-                <svg class="team__icon-twitter" width="20" height="20">
-                  <use
-                    xlink:href="/goit-homework/images/icons.svg#twitter"
-                  ></use>
-                </svg>
-              </a>
-            </li>
-            <li class="team__icon-box">
-              <a href="#" class="team__icon-link">
-                <svg class="team__icon-facebook" width="20" height="20">
-                  <use
-                    xlink:href="/goit-homework/images/icons.svg#facebook"
-                  ></use>
-                </svg>
-              </a>
-            </li>
-            <li class="team__icon-box">
-              <a href="#" class="team__icon-link">
-                <svg class="team__icon-in" width="20" height="20">
-                  <use xlink:href="/goit-homework/images/icons.svg#in"></use>
-                </svg>
-              </a>
-            </li>
-          </ul>
-        </li>
-        <li class="team__item">
-          <img
-            class="team__photo"
-            src="/goit-homework/images/studio/Никита.jpg"
-            alt="Николай"
-            width="270"
-            height="260"
-          />
-          <h4 class="team__name">Николай Тарасов</h4>
-          <p class="team__spec">Marketing</p>
-          <ul class="team__icon-list">
-            <li class="team__icon-box">
-              <a href="#" class="team__icon-link"
-                ><svg class="team__icon-instagram" width="20" height="20">
-                  <use
-                    xlink:href="/goit-homework/images/icons.svg#instagram"
-                  ></use></svg
-              ></a>
-            </li>
-            <li class="team__icon-box">
-              <a href="#" class="team__icon-link">
-                <svg class="team__icon-twitter" width="20" height="20">
-                  <use
-                    xlink:href="/goit-homework/images/icons.svg#twitter"
-                  ></use>
-                </svg>
-              </a>
-            </li>
-            <li class="team__icon-box">
-              <a href="#" class="team__icon-link">
-                <svg class="team__icon-facebook" width="20" height="20">
-                  <use
-                    xlink:href="/goit-homework/images/icons.svg#facebook"
-                  ></use>
-                </svg>
-              </a>
-            </li>
-            <li class="team__icon-box">
-              <a href="#" class="team__icon-link">
-                <svg class="team__icon-in" width="20" height="20">
-                  <use xlink:href="/goit-homework/images/icons.svg#in"></use>
-                </svg>
-              </a>
-            </li>
-          </ul>
-        </li>
-        <li class="team__item">
-          <img
-            class="team__photo"
-            src="/goit-homework/images/studio/Миха.jpg"
-            alt="Михаил"
-            width="270"
-            height="260"
-          />
-          <h4 class="team__name">Михаил Ермаков</h4>
-          <p class="team__spec">UI Designer</p>
-          <ul class="team__icon-list">
-            <li class="team__icon-box">
-              <a href="#" class="team__icon-link"
-                ><svg class="team__icon-instagram" width="20" height="20">
-                  <use
-                    xlink:href="/goit-homework/images/icons.svg#instagram"
-                  ></use></svg
-              ></a>
-            </li>
-            <li class="team__icon-box">
-              <a href="#" class="team__icon-link">
-                <svg class="team__icon-twitter" width="20" height="20">
-                  <use
-                    xlink:href="/goit-homework/images/icons.svg#twitter"
-                  ></use>
-                </svg>
-              </a>
-            </li>
-            <li class="team__icon-box">
-              <a href="#" class="team__icon-link">
-                <svg class="team__icon-facebook" width="20" height="20">
-                  <use
-                    xlink:href="/goit-homework/images/icons.svg#facebook"
-                  ></use>
-                </svg>
-              </a>
-            </li>
-            <li class="team__icon-box">
-              <a href="#" class="team__icon-link">
-                <svg class="team__icon-in" width="20" height="20">
-                  <use xlink:href="/goit-homework/images/icons.svg#in"></use>
-                </svg>
-              </a>
-            </li>
-          </ul>
-        </li>
-      </ul>
+        <ul class="team__list">
+          <li class="team__item">
+            <img
+              class="team__photo"
+              src="/goit-homework/images/studio/Игорь.jpg"
+              alt="Игорь"
+              width="270"
+              height="260"
+            />
+            <h4 class="team__name">Игорь Демьяненко</h4>
+            <p class="team__spec">Product Designer</p>
+            <ul class="team__icon-list">
+              <li class="team__icon-box">
+                <a href="#" class="team__icon-link"
+                  ><svg class="team__icon-instagram" width="20" height="20">
+                    <use
+                      xlink:href="/goit-homework/images/icons.svg#instagram"
+                    ></use></svg
+                ></a>
+              </li>
+              <li class="team__icon-box">
+                <a href="#" class="team__icon-link">
+                  <svg class="team__icon-twitter" width="20" height="20">
+                    <use
+                      xlink:href="/goit-homework/images/icons.svg#twitter"
+                    ></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="team__icon-box">
+                <a href="#" class="team__icon-link">
+                  <svg class="team__icon-facebook" width="20" height="20">
+                    <use
+                      xlink:href="/goit-homework/images/icons.svg#facebook"
+                    ></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="team__icon-box">
+                <a href="#" class="team__icon-link">
+                  <svg class="team__icon-in" width="20" height="20">
+                    <use xlink:href="/goit-homework/images/icons.svg#in"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </li>
+          <li class="team__item">
+            <img
+              class="team__photo"
+              src="/goit-homework/images/studio/Ольга.jpg"
+              alt="Ольга"
+              width="270"
+              height="260"
+            />
+            <h4 class="team__name">Ольга Репина</h4>
+            <p class="team__spec">Frontend Developer</p>
+            <ul class="team__icon-list">
+              <li class="team__icon-box">
+                <a href="#" class="team__icon-link"
+                  ><svg class="team__icon-instagram" width="20" height="20">
+                    <use
+                      xlink:href="/goit-homework/images/icons.svg#instagram"
+                    ></use></svg
+                ></a>
+              </li>
+              <li class="team__icon-box">
+                <a href="#" class="team__icon-link">
+                  <svg class="team__icon-twitter" width="20" height="20">
+                    <use
+                      xlink:href="/goit-homework/images/icons.svg#twitter"
+                    ></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="team__icon-box">
+                <a href="#" class="team__icon-link">
+                  <svg class="team__icon-facebook" width="20" height="20">
+                    <use
+                      xlink:href="/goit-homework/images/icons.svg#facebook"
+                    ></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="team__icon-box">
+                <a href="#" class="team__icon-link">
+                  <svg class="team__icon-in" width="20" height="20">
+                    <use xlink:href="/goit-homework/images/icons.svg#in"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </li>
+          <li class="team__item">
+            <img
+              class="team__photo"
+              src="/goit-homework/images/studio/Никита.jpg"
+              alt="Николай"
+              width="270"
+              height="260"
+            />
+            <h4 class="team__name">Николай Тарасов</h4>
+            <p class="team__spec">Marketing</p>
+            <ul class="team__icon-list">
+              <li class="team__icon-box">
+                <a href="#" class="team__icon-link"
+                  ><svg class="team__icon-instagram" width="20" height="20">
+                    <use
+                      xlink:href="/goit-homework/images/icons.svg#instagram"
+                    ></use></svg
+                ></a>
+              </li>
+              <li class="team__icon-box">
+                <a href="#" class="team__icon-link">
+                  <svg class="team__icon-twitter" width="20" height="20">
+                    <use
+                      xlink:href="/goit-homework/images/icons.svg#twitter"
+                    ></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="team__icon-box">
+                <a href="#" class="team__icon-link">
+                  <svg class="team__icon-facebook" width="20" height="20">
+                    <use
+                      xlink:href="/goit-homework/images/icons.svg#facebook"
+                    ></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="team__icon-box">
+                <a href="#" class="team__icon-link">
+                  <svg class="team__icon-in" width="20" height="20">
+                    <use xlink:href="/goit-homework/images/icons.svg#in"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </li>
+          <li class="team__item">
+            <img
+              class="team__photo"
+              src="/goit-homework/images/studio/Миха.jpg"
+              alt="Михаил"
+              width="270"
+              height="260"
+            />
+            <h4 class="team__name">Михаил Ермаков</h4>
+            <p class="team__spec">UI Designer</p>
+            <ul class="team__icon-list">
+              <li class="team__icon-box">
+                <a href="#" class="team__icon-link"
+                  ><svg class="team__icon-instagram" width="20" height="20">
+                    <use
+                      xlink:href="/goit-homework/images/icons.svg#instagram"
+                    ></use></svg
+                ></a>
+              </li>
+              <li class="team__icon-box">
+                <a href="#" class="team__icon-link">
+                  <svg class="team__icon-twitter" width="20" height="20">
+                    <use
+                      xlink:href="/goit-homework/images/icons.svg#twitter"
+                    ></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="team__icon-box">
+                <a href="#" class="team__icon-link">
+                  <svg class="team__icon-facebook" width="20" height="20">
+                    <use
+                      xlink:href="/goit-homework/images/icons.svg#facebook"
+                    ></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="team__icon-box">
+                <a href="#" class="team__icon-link">
+                  <svg class="team__icon-in" width="20" height="20">
+                    <use xlink:href="/goit-homework/images/icons.svg#in"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </li>
+        </ul>
       </div>
     </section>
 
@@ -477,5 +487,22 @@
         </div>
       </section>
     </footer>
+
+    <script>
+      (() => {
+        const refs = {
+          openModalBtn: document.querySelector('[data-modal-open]'),
+          closeModalBtn: document.querySelector('[data-modal-close]'),
+          modal: document.querySelector('[data-modal]'),
+        };
+      
+        refs.openModalBtn.addEventListener('click', toggleModal);
+        refs.closeModalBtn.addEventListener('click', toggleModal);
+      
+        function toggleModal() {
+          refs.modal.classList.toggle('is-hidden');
+        }
+      })();
+    </script>
   </body>
 </html>
