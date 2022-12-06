@@ -82,9 +82,94 @@
       </div>
     </section>
 
-    <div class="modal" data-modal>
+    <div class="modal is-hidden" data-modal>
       <div class="modal-window">
-        <button class="close-button" data-modal-close>X</button>
+        <button class="modal__close-button" data-modal-close>
+          <svg class="modal__close-btn-icon" width="30" height="30">
+            <use xlink:href="./images/icons.svg#btn-close-icon"></use>
+          </svg>
+        </button>
+        <form class="modal__form" action="#" method="get">
+          <legend class="modal__title">
+            Оставьте свои данные, мы вам перезвоним
+          </legend>
+          <div class="modal__input-box">
+            <label class="modal__input-header" for="name"
+              ><span class="modal__input-name">Имя</span><br />
+              <input
+                class="modal__input"
+                type="text"
+                name="name"
+                autofocus
+                required
+                id="name"
+              />
+              <svg
+                class="modal__btn-name-icon"
+                viewBox="0 0 12 12"
+                width="12"
+                height="12"
+              >
+                <use xlink:href="./images/icons.svg#name-icon"></use>
+              </svg>
+            </label>
+          </div>
+          <div class="modal__input-box">
+            <label class="modal__input-header" for="phone"
+              ><span class="modal__input-name">Телефон</span>
+              <svg
+                class="modal__btn-name-icon"
+                viewBox="0 0 14 14"
+                width="13"
+                height="13"
+              >
+                <use xlink:href="./images/icons.svg#phone-icon"></use>
+              </svg>
+
+            <input class="modal__input" type="tel" name="tel" required id="phone" />
+          </label>
+          </div>
+          <div class="modal__input-box">
+            <label class="modal__input-header" for="email"
+              ><span class="modal__input-name">Почта</span>
+              <svg
+                class="modal__btn-name-icon"
+                viewBox="0 0 16 12"
+                width="15"
+                height="12"
+              >
+                <use xlink:href="./images/icons.svg#mail-icon"></use></svg
+            >
+            <input class="modal__input" type="email" name="email" id="email" /></label>
+            
+          </div>
+          <div class="modal__input-box">
+            <label class="modal__input-header" for="comment"
+              ><span class="modal__input-name">Комментарий</span>
+              <textarea
+                class="modal__textarea"
+                placeholder="Введите текст"
+                rows="20"
+                cols="100"
+                name="comment"
+                id="comment"
+              >
+              </textarea>
+            </label>
+          </div>
+          <div class="modal__input-box">
+            <label class="modal__rule-header" for="rule">
+              <input
+                class="modal__rule-input"
+                type="checkbox"
+                required
+                id="rule"
+              /> <span class="modal__input-name">Соглашаюсь с рассылкой и принимаю
+              <a href="#" class="modal__link-rule">Условия договора</a></span>
+            </label>
+          </div>
+          <button class="modal__btn-submit" type="submit">Отправить</button>
+        </form>
       </div>
 
       <div class="overlay"></div>
@@ -486,7 +571,7 @@
           </ul>
         </div>
         <div class="form__content-box">
-        <form action="#" class="form">
+          <form action="#" class="form">
             <h3 class="form__header">Подпишитесь на рассылку</h3>
             <input
               class="form__input"
@@ -495,14 +580,16 @@
               placeholder="E-mail"
               required
             />
-            <button class="form__btn-submit" type="submit"><span class="form__btn-submit-text">Подписаться</span>
+            <button class="form__btn-submit" type="submit">
+              <span class="form__btn-submit-text">Подписаться</span>
               <svg class="form__btn-submit-icon" width="24" height="24">
-                <use xlink:href="/goit-homework/images/icons.svg#btn-tg-icon"></use>
+                <use
+                  xlink:href="/goit-homework/images/icons.svg#btn-tg-icon"
+                ></use>
               </svg>
             </button>
-          
-        </form>
-      </div>
+          </form>
+        </div>
       </section>
     </footer>
 
