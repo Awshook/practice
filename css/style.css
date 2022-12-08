@@ -74,14 +74,15 @@ a {
   color: var(--secondary-color);
 }
 
-.menu__link {
+.menu-list__link {
   padding: 32px 0px;
   position: relative;
   transition: color 500ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 a.link-1_active,
-.menu__link:hover {
+a.link-2_active,
+.menu-list__link:hover {
   color: var(--third-color);
 }
 
@@ -282,7 +283,7 @@ a.link-1_active,
   background: white;
 }
 
-h2 {
+.header-page {
   font-weight: 700;
   font-size: 36px;
   line-height: 42px;
@@ -495,7 +496,7 @@ h2 {
 }
 
 .social__header,
-.form__header {
+.sign-form__header {
   color: white;
   margin-bottom: 20px;
   margin-top: 15px;
@@ -543,15 +544,15 @@ h2 {
   fill: white;
 }
 
-.form__container {
+.sign-form__container {
   margin: 0 0 0 93px;
 }
 
-.form__header {
+.sign-form__header {
   margin-bottom: 20px;
 }
 
-.form__input {
+.sign-form__input {
   width: 358px;
   padding: 15px;
   background-color: #2f303a;
@@ -855,7 +856,7 @@ a.modal__link {
   overflow: hidden;
 }
 
-.link h4 {
+.link__title {
   line-height: 2;
   font-size: 18px;
   color: var(--secondary-color);
