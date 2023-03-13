@@ -183,5 +183,10 @@
 <path d="M21 10.1079L19.8921 9L15.5 13.3921L11.1079 9L10 10.1079L14.3921 14.5L10 18.8921L11.1079 20L15.5 15.6079L19.8921 20L21 18.8921L16.6079 14.5L21 10.1079Z" fill="black"/>
 </symbol>
 
+<symbol id="burger-icon" viewBox="0 0 40 40">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M8 14.6667V12H32V14.6667H8ZM8 21.3333H32V18.6667H8V21.3333ZM8 28H32V25.3333H8V28Z"/>
+</symbol>
+
+
 </defs>
 </svg>
