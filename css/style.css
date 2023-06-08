@@ -532,7 +532,7 @@ a.menu__link--active::after {
   position: relative;
   left: 10px;
 }
-
+/* --------------MEDIA --------------------*/
 @media (max-width: 767px) {
   .header__container {
     padding: 0 15px;
@@ -666,7 +666,6 @@ a.menu__link--active::after {
 @media (min-width: 768px) and (max-width: 1200px) {
   .header__container {
     padding: 0 15px;
-    height: 60px;
     align-items: center;
   }
 
@@ -769,6 +768,7 @@ a.menu__link--active::after {
     margin-bottom: 20px;
   }
 }
+
 
 /* ------------------------------------------------ */
 .modal {
@@ -909,6 +909,7 @@ a.menu__link--active::after {
 .modal__cheсkbox-label {
   position: relative;
   cursor: pointer;
+  margin-left: 20px;
 }
 
 .modal__cheсkbox {
@@ -955,19 +956,15 @@ a.menu__link--active::after {
   align-items: center;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   .modal__window {
     width: 100%;
+    max-height: 100%;
   }
 
-  .modal__checkbox-icon-area {
-    margin-left: 20px;
-  }
-
-  .modal__checkbox-span {
-    margin-left: 20px;
-  }
 }
+  
+
 
 /* ------------------------------------------------ */
 

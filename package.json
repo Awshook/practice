@@ -1,0 +1,16 @@
+{
+  "name": "practice",
+  "version": "1.0.0",
+  "description": "WebStudio project",
+  "main": "index.js",
+  "scripts": {
+    "scss:build": "node-sass scss/main.scss css/main.css",
+    "scss:watch": "node-sass --watch scss/main.scss css/main.css",
+    "build": "npm run scss:build && npm run scss:watch" 
+  },
+  "author": "Faruk Abdusamed",
+  "license": "ISC",
+  "dependencies": {
+    "node-sass": "^8.0.0"
+  }
+}

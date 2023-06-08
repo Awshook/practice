@@ -1,0 +1,19 @@
+@import "./utils/variables";
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-weight: $main-font-weight;
+  font-size: $main-font-size;
+  color: $main-color;
+}
+
+@import "./normilize.scss";
+@import "./sections/header";
+@import "./sections/main-title";
+@import "./sections/benefits.scss";
+@import "./sections/features.scss";
+@import "./sections/team.scss";
+@import "./sections/clients.scss";
+@import "./sections/footer.scss";
+@import "./sections/filters.scss";
+@import "./sections/goods.scss";

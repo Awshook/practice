@@ -1,0 +1,42 @@
+@import "../utils/variables";
+
+.features {
+  padding-bottom: 94px;
+
+  @media (max-width: 1200px) {
+    display: none;
+  }
+}
+
+.title {
+  text-align: center;
+  font-size: 36px;
+  line-height: calc(42 / 36);
+  color: $third-color;
+  margin-bottom: 50px;
+}
+
+.features__list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.features__item {
+  position: relative;
+}
+
+.features__description {
+  width: 370px;
+  height: 70px;
+  color: white;
+  background: rgba(47, 48, 58, 0.8);
+  text-transform: uppercase;
+  font-weight: 700;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
